@@ -1,8 +1,8 @@
 Certainly! Here’s a README file for the FanToken smart contract, with a special focus on the import statements and the three key functions: mint, transfer, and burn.
 
-FanToken Smart Contract
+ShoppingToken 
 Overview
-The FanToken smart contract is an ERC20 token built using Solidity and deployed on the Avalanche blockchain. This contract implements essential token functionalities and utilizes OpenZeppelin's widely adopted libraries to ensure security and compliance with the ERC20 standard.
+The ShoppingToken smart contract is an ERC20 token built using Solidity and deployed on the Avalanche blockchain. This contract implements essential token functionalities and utilizes OpenZeppelin's widely adopted libraries to ensure security and compliance with the ERC20 standard.
 
 Imports
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
@@ -17,12 +17,12 @@ Functions Included: Ownership transfer and access control.
 Usage: Ensures that sensitive functions, such as minting new tokens, can only be executed by the owner of the contract.
 Contract Functions
 1. Constructor
-constructor() ERC20("FanToken", "FAN") {
+constructor() ERC20("ShoppingToken", "SHO") {
     _mint(msg.sender, 1000 * 10**18);
 }
 Purpose: Initializes the token with a name and symbol and mints an initial supply of tokens.
 Parameters:
-name - The name of the token ("FanToken").
+name - The name of the token ("ShoppingToken").
 symbol - The symbol of the token ("FAN").
 _mint - Mints 1000 tokens (with 18 decimal places) to the deployer’s address.
 Usage: Ensures that the deployer starts with an initial supply of tokens.
@@ -55,4 +55,4 @@ Parameters:
 amount - The number of tokens to burn.
 Usage: Enables users to manage their token holdings and potentially increase the value of the remaining tokens by reducing the overall supply.
 Conclusion
-The FanToken contract provides a solid foundation for token management on the Avalanche blockchain. By leveraging OpenZeppelin’s ERC20 and Ownable contracts, it ensures a secure, standard-compliant implementation of essential token functionalities, including minting, transferring, and burning.
+The ShoppimgToken contract provides a solid foundation for token management on the Avalanche blockchain. By leveraging OpenZeppelin’s ERC20 and Ownable contracts, it ensures a secure, standard-compliant implementation of essential token functionalities, including minting, transferring, and burning.
